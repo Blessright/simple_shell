@@ -8,6 +8,7 @@
 void _eputs(char *str)
 {
 	int i = 0;
+
 	​
 	if (!str)
 		return;
@@ -28,6 +29,7 @@ int _eputchar(char c)
 {
 	static int i;
 	static char buf[WRITE_BUF_SIZE];
+
 	​
 	if (c == BUF_FLUSH || i >= WRITE_BUF_SIZE)
 	{
@@ -50,6 +52,7 @@ int _putfd(char c, int fd)
 {
 	static int i;
 	static char buf[WRITE_BUF_SIZE];
+
 	​
 	if (c == BUF_FLUSH || i >= WRITE_BUF_SIZE)
 	{
@@ -70,7 +73,8 @@ int _putfd(char c, int fd)
 int _putsfd(char *str, int fd)
 {
 	int i = 0;
-	<200b>
+
+	​
 	if (!str)
 		return (0);
 	while (*str)
